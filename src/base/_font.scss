@@ -1,0 +1,15 @@
+@use '../abstracts/' as * ;
+
+.card__header{
+    font-family: var(--ff-primary);
+    
+}
+
+.card__title{
+    font-size: var(--fs-100);
+}
+
+.card__subtitle{
+    font-size: var(--fs-200);
+    color: var(--color-subtitle-300);
+}

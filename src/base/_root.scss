@@ -1,0 +1,28 @@
+@use '../abstracts/' as *;
+
+:root {
+  // each des colors en fonction de leur teinte
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+
+  // each des types de typo
+  @each $font, $value in $fonts {
+    --ff-#{$font}: #{$value};
+  }
+
+ // each des types de typo
+  @each $spacers, $value in $spacers {
+    --sp-#{$spacers}: #{$value};
+  }
+
+
+  // each des sizes de polices
+  @each $size, $value in $fontsize {
+    --fs-#{$size}: #{$value};
+  }
+
+
+}
